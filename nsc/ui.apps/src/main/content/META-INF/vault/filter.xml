@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/nsc/clientlibs"/>
+    <filter root="/apps/nsc/components"/>
+    <filter root="/apps/nsc/i18n"/>
+</workspaceFilter>

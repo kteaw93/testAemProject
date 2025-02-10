@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/nsc" mode="merge"/>
+    <filter root="/content/nsc" mode="merge"/>
+    <filter root="/content/dam/nsc" mode="merge">
+        <exclude pattern="/content/dam/nsc(/.*)?"/>
+        <include pattern="/content/dam/nsc/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/nsc/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/nsc" mode="merge"/>
+</workspaceFilter>
