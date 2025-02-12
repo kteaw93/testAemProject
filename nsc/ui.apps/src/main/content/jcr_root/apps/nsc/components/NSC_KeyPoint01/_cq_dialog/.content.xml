@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <tabs jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                        <items jcr:primaryType="nt:unstructured">
+                            <option
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    jcr:title="Option"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    >
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <popupButtonTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="POPUP Button title"
+                                                    name="./popupButtonTitle" />
+                                            <popupItems
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    fieldLabel="POPUP Items"
+                                                    composite="{Boolean}true">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                        name="./popupItems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <listItem
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="ITEM Title"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        >
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <desktopTitle
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        emptyText="Enable html code input/ 각주 삽입 가능"
+                                                                        fieldLabel="Desktop title"
+                                                                        name="./desktopTitle" />
+                                                                <description
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                                        emptyText="Enable html code input/ 각주 삽입 가능"
+                                                                        fieldLabel="POPUP Description"
+                                                                        name="./description" />
+                                                            </items>
+                                                        </listItem>
+                                                    </items>
+                                                </field>
+                                            </popupItems>
+                                        </items>
+                                    </column>
+                                </items>
+                            </option>
+                        </items>
+                    </tabs>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

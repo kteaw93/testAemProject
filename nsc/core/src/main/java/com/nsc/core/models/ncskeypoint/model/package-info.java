@@ -15,6 +15,6 @@
  */
 @Version("1.0")
 
-package com.nsc.core.models;
+package com.nsc.core.models.ncskeypoint.model;
 
 import org.osgi.annotation.versioning.Version;

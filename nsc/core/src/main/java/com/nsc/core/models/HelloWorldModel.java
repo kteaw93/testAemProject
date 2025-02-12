@@ -55,8 +55,8 @@ public class HelloWorldModel {
                 .map(Page::getPath).orElse("");
 
         message = "Hello World!\n"
-            + "Resource type is: " + resourceType + "\n"
-            + "Current page is:  " + currentPagePath + "\n";
+            + "Resource type is: 가나다 " + resourceType + "\n"
+            + "Current page is:  라마바 " + currentPagePath + "\n";
     }
 
     public String getMessage() {
