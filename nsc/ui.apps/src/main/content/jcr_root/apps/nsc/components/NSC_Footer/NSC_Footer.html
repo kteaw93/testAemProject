@@ -1,0 +1,40 @@
+<sly data-sly-use.footer="com.nsc.core.models.ncsfooter.model.NCSFooterModel">
+<div class="footer-bottom">
+    <div class="inner">
+        <h2 class="footer-logo">
+            <a href="${properties.mainImageIconUrl}.html"   x-cq-linkchecker="skip" ></a>
+        </h2>
+        <div class="container">
+            <ul class="footermenu">
+                <sly data-sly-list.componeyInfo="${footer.componeyInfo}">
+                <li><a href="${componeyInfo.componeyMainLink}" x-cq-linkchecker="skip">${componeyInfo.componeyMainTitle}</a></li>
+                </sly>
+            </ul>
+            <b>${properties.componeyName}</b>
+            <div class="footercont">
+                <div class="row">
+                    <span>${properties.componeyCeoName}</span>
+                </div>
+                <address>
+                    <em>${properties.componeyTitle}</em>
+                    <span>${properties.componeyComment}</span>
+                    <div class="telbox">
+                        <span class="tel"><a href="tel:02-552-0205">${properties.componeyNumber}</a></span>
+                        <span>${properties.componeyFax}</span>
+                    </div>
+                    <div class="projectroom">
+                        <em>${properties.componeyProjectRoomName}</em>
+                        <span>${properties.componeyProjectRoomComment}</span>
+                    </div>
+                </address>
+            </div>
+            <p>${properties.componect}</p>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+</sly>

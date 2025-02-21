@@ -1,26 +1,28 @@
 
-package com.nsc.core.models.ncskeypoint.model;
+package com.nsc.core.models.ncsvideobox.model;
 
 
-import com.nsc.core.models.ncskeypoint.model.resources.NCSKeyPointResModel;
+import com.nsc.core.models.ncsvideobox.model.resources.NCSVideoMainRes;
+import com.nsc.core.models.ncsvideobox.model.resources.NCSVideoWorkRes;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ChildResource;
-import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+
 import javax.annotation.PostConstruct;
 import java.util.List;
 
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class NCSKeyPointModel {
+public class NCSVideoModel {
 
     @Getter @Setter
-    @ChildResource(name = "popupItems") private List<NCSKeyPointResModel> popupItems;
+    @ChildResource(name = "mainItems") private List<NCSVideoMainRes> mainItems;
 
     @Getter @Setter
-    @ValueMapValue(name = "popupButtonTitle") private String popupButtonTitle;
+    @ChildResource(name = "worksItems") private List<NCSVideoWorkRes> worksItems;
+
 
     @PostConstruct
     protected void init() {

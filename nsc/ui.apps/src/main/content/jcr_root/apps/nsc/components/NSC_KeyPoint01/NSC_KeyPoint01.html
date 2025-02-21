@@ -1,12 +1,12 @@
 <sly data-sly-use.keyPoint="com.nsc.core.models.ncskeypoint.model.NCSKeyPointModel">
-<section class="branch-wrap">
+<section class="branch-wrap"  style="padding-top: 120px; background-color: white;">
     <div class="inner">
-        <h4 class="s-title">${keyPoint.popupButtonTitle}</h4>
+        <h4 class="s-title" style="margin-bottom: 60px;">${keyPoint.popupButtonTitle}</h4>
         <sly data-sly-list.branchs="${keyPoint.popupItems}">
         <div class="branch type02">
             <p>${branchs.desktopTitle}</p>
             <div>
-                <span>${branchs.description}</span>
+                <span>${branchs.description @context='html'}</span>
             </div>
         </div>
         </sly>

@@ -1,0 +1,60 @@
+<sly data-sly-use.keyPoint="com.nsc.core.models.ncsvideobox.model.NCSVideoModel">
+<section class="dept-wrap">
+    <div class="tab-wrap">
+        <div class="tab-header dept-tab">
+            <ul class="tab-ul">
+                <sly data-sly-list.mainTitle="${keyPoint.mainItems}">
+                <li class="${mainTitleList.first ? 'current' : ''}" data-tab="tab${mainTitleList.count}"><a href="#">${mainTitle.mainTitle}</a></li>
+                </sly>
+            </ul>
+        </div>
+        <div id="tab1" class="tabcont current">
+            <section class="biz-visual">
+                <div class="inner">
+                    <span>${properties.videoTitle}</span>
+                    <p>
+                        ${properties.videoComment}
+                    </p>
+
+                    <a data-pop="video-pop">
+                        <img class="biz-visual-media" src="${properties.videoImage}" alt="${properties.videoAlert}">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div id="tab2" class="tabcont">
+            <section class="biz-work">
+                <div class="inner">
+                    <div>
+                        <sly data-sly-list.card="${keyPoint.worksItems}">
+                        <div class="item  ent_data">
+                            <div class="itembox">
+                                <div class="cont">
+                                    <span class="work-year">${card.workYear}</span>
+                                    <p class="work-title">${card.workName}<br></p>
+                                    <span class="logo">${card.workComponey}</span>
+                                </div>
+                                <figure>
+                                    <p>${card.workComment}</p></figure>
+                            </div>
+                        </div>
+                        </sly>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+</sly>
+<!-- 팝업 영역-->
+<div class="popup video-pop">
+    <div class="pop-wrap">
+        <span class="btn-close pop-close"></span>
+        <div class="layer__section">
+            <video controls="" preload="metadata" playsinline="" src="${properties.videoUrl}" class="biz__video" tabindex="0">
+                <source src="${properties.videoUrl}" type="video/mpeg4">
+            </video>
+        </div>
+    </div>
+
+</div>

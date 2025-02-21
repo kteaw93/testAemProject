@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="NSC_HEADER"
+          sling:resourceType="cq/gui/components/authoring/dialog" xmlns:granite="http://www.adobe.com/jcr/granite/1.0">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <tabs jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                        <items jcr:primaryType="nt:unstructured">
+                            <option
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    jcr:title="Option"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    >
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <mainImageIcon
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Main Image Icone"
+                                                    rootPath="/content/dam"
+                                                    name="./mainImageIcon" />
+                                            <oneDapsItems
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    fieldLabel="First Deps"
+                                                    composite="{Boolean}true">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                        name="./oneDapsItems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <oneDapsItem
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="First Deps"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        >
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <oneDepsTitle
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        emptyText="1Deps title"
+                                                                        fieldLabel="One Deps Title"
+                                                                        name="./oneDepsTitle" />
+                                                                <oneDepsLink
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        emptyText="1Deps title"
+                                                                        fieldLabel="One Deps Link"
+                                                                        name="./oneDepsLink" />
+                                                                <twoDapsItems
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                        fieldLabel="Second Deps"
+                                                                        composite="{Boolean}true">
+                                                                    <field
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                                            name="./twoDapsItems">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <twoDapsItem
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    jcr:title="Second Deps"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                            >
+                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                    <twoDepsTitle
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                            emptyText="2Deps title"
+                                                                                            fieldLabel="Two Deps Title"
+                                                                                            name="./twoDepsTitle" />
+                                                                                    <twoDepsLink
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                            emptyText="2Deps title"
+                                                                                            fieldLabel="Two Deps Link"
+                                                                                            name="./twoDepsLink" />
+                                                                                </items>
+                                                                            </twoDapsItem>
+                                                                        </items>
+                                                                    </field>
+                                                                </twoDapsItems>
+                                                            </items>
+                                                        </oneDapsItem>
+                                                    </items>
+                                                </field>
+                                            </oneDapsItems>
+                                        </items>
+                                    </column>
+                                </items>
+                            </option>
+                        </items>
+                    </tabs>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

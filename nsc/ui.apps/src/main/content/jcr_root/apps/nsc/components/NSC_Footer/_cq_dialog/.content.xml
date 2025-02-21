@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="NSC_Footer"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <tabs jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                        <items jcr:primaryType="nt:unstructured">
+                            <option
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    jcr:title="Option"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    >
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <mainImageIcon
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Main Image Icone"
+                                                    rootPath="/content/dam"
+                                                    name="./mainImageIcon" />
+                                            <mainImageIconUrl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Main Image Icone Url"
+                                                    rootPath="/content/nsc"
+                                                    name="./mainImageIconUrl" />
+                                        </items>
+                                    </column>
+                                </items>
+                            </option>
+                            <componey
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    jcr:title="Componey"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    >
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <componeyInfo
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    fieldLabel="Componey Info"
+                                                    composite="{Boolean}true">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                        name="./componeyInfo">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <componeyInfoItem
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Componey Info"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        >
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <componeyMainTitle
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        emptyText="Componey Info"
+                                                                        fieldLabel="Componey Info"
+                                                                        name="./componeyMainTitle" />
+                                                                <componeyMainLink
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        emptyText="Componey Info URL"
+                                                                        fieldLabel="Componey Info URL"
+                                                                        name="./componeyMainLink" />
+                                                            </items>
+                                                        </componeyInfoItem>
+                                                    </items>
+                                                </field>
+                                            </componeyInfo>
+                                        </items>
+                                    </column>
+                                </items>
+                            </componey>
+                            <componeyCeo
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    jcr:title="Ceo Info"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    >
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <componeyName
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Componey Name"
+                                                    fieldLabel="Componey Name"
+                                                    name="./componeyName" />
+                                            <componeyCeoName
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Componey CEO Name"
+                                                    fieldLabel="Componey CEO Name"
+                                                    name="./componeyCeoName" />
+                                            <componeyTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="componey Title"
+                                                    fieldLabel="componey Title"
+                                                    name="./componeyTitle" />
+                                            <componeyComment
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Componey Comment"
+                                                    fieldLabel="Componey Comment"
+                                                    name="./componeyComment" />
+                                            <componeyNumber
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Componey Number"
+                                                    fieldLabel="Componey Number"
+                                                    name="./componeyNumber" />
+                                            <componeyFax
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Componey Fax"
+                                                    fieldLabel="Componey Fax"
+                                                    name="./componeyFax" />
+                                            <componeyProjectRoomName
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Componey Project Room Name"
+                                                    fieldLabel="Componey Project Room Name"
+                                                    name="./componeyProjectRoomName" />
+                                            <componeyProjectRoomComment
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Componey Project Room Comment"
+                                                    fieldLabel="Componey Project Room Comment"
+                                                    name="./componeyProjectRoomComment" />
+                                            <componect
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Componey ect"
+                                                    fieldLabel="Componey ect"
+                                                    name="./componect" />
+                                        </items>
+                                    </column>
+                                </items>
+                            </componeyCeo>
+                        </items>
+                    </tabs>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

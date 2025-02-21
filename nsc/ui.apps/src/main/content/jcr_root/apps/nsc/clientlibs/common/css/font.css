@@ -1,0 +1,92 @@
+/*
+
+@font-face {
+    font-family: 'Noto Sans kr';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../assets/fonts/NotoSansKR-Thin.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans kr';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/NotoSansKR-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans kr';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/NotoSansKR-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans kr';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/NotoSansKR-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans kr';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/NotoSansKR-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans kr';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/NotoSansKR-Black.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/NotoSans-Regular.woff') format('woff'), url('../assets/fonts/NotoSans-Regular.ttf') format('truetype');
+    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/NotoSans-Medium.woff') format('woff'), url('../assets/fonts/NotoSans-Medium.ttf') format('truetype');
+    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/NotoSans-Bold.woff') format('woff'), url('../assets/fonts/NotoSans-Bold.ttf') format('truetype');
+    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+}
+
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../assets/fonts/AppleSDGothicNeoL.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/AppleSDGothicNeoM.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/AppleSDGothicNeoB.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/AppleSDGothicNeoEB.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/AppleSDGothicNeoH.ttf') format('opentype');
+}
+
+*/

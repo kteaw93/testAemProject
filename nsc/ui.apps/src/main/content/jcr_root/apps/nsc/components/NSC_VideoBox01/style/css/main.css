@@ -1,0 +1,8 @@
+.popup.video-pop .btn-close, .popup.video-pop02 .btn-close {
+    width: 24px;
+    height: 24px;
+    transform: translate(20px, -66px);
+    background: url("/content/dam/nsc/pngwing.com.png") no-repeat center/cover;
+    position: relative;
+    z-index: 999;
+}

@@ -1,0 +1,131 @@
+<sly data-sly-use.header="com.nsc.core.models.ncsheader.model.NCSHeaderModel">
+    <div class="header-top">
+        <h1 class="nav-logo">
+            <img class="logo" src="${header.mainImageIcon}" alt="">
+        </h1>
+        <ul class="nav-menu" id="oneDepsNav">
+        </ul>
+        <div class="nav-btn-wrap">
+            <button class="menu-trigger">
+                <div>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="inner">
+            <a href="/web" class="home" x-cq-linkchecker="skip"><span></span></a>
+            <div class="select-wrap first">
+                <div class="nice-select" tabindex="0">
+                    <span class="current" id="oneDepsChange">선택</span>
+                    <ul class="list" id="subOneDeps">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="select-wrap secnd">
+                <div class="nice-select" tabindex="0">
+                    <span class="current" id="test123">선택</span>
+                    <ul class="list" id="선택">
+                        <li data-value="" class="option selected">선택</li>
+                    </ul>
+                    <sly data-sly-list.oneDeps="${header.oneDapsItems}">
+                        <ul class="list" id="${oneDeps.oneDepsTitle}" style="display: none">
+                            <sly data-sly-list.towDaps="${oneDeps.twoDapsItems}">
+                                <li data-value="" class="option" >${towDaps.twoDepsTitle}</li>
+                            </sly>
+                        </ul>
+                    </sly>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-layer">
+        <div class="header-layer-wrap" id="twoDepsNav">
+        </div>
+    </div>
+</sly>
+
+
+
+
+
+<!--/*
+
+
+<sly data-sly-use.header="com.nsc.core.models.ncsheader.model.NCSHeaderModel">
+    <div class="header-top">
+        <h1 class="nav-logo">
+            <img class="logo" src="${header.mainImageIcon}" alt="">
+           &lt;!&ndash;  <a x-cq-linkchecker="skip"><img class="logo" src="${header.mainImageIcon}" alt="현대자동차"></a> &ndash;&gt;
+        </h1>
+        <ul class="nav-menu">
+            <sly data-sly-list.oneDeps="${header.oneDapsItems}">
+            <li><a href="${oneDeps.oneDepsLink}" x-cq-linkchecker="skip">${oneDeps.oneDepsTitle}</a></li>
+            </sly>
+        </ul>
+        <div class="nav-btn-wrap">
+            <button class="menu-trigger">
+                <div>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="inner">
+            <a href="/web" class="home" x-cq-linkchecker="skip"><span></span></a>
+            <div class="select-wrap first">
+                <div class="nice-select" tabindex="0">
+                    <span class="current" id="oneDepsChange">선택</span>
+                    <ul class="list">
+                        <sly data-sly-list.oneDeps="${header.oneDapsItems}">
+                        <li data-value="" class="option" onclick="checkDeps('${oneDeps.oneDepsTitle @context='attribute'}')" value="${oneDeps.oneDepsTitle}">${oneDeps.oneDepsTitle}</li>
+                        </sly>
+                    </ul>
+                </div>
+            </div>
+            <div class="select-wrap secnd">
+                <div class="nice-select" tabindex="0">
+                    <span class="current" id="test123">선택</span>
+                    <ul class="list" id="선택">
+                            <li data-value="" class="option selected">선택</li>
+                    </ul>
+                    <sly data-sly-list.oneDeps="${header.oneDapsItems}">
+                        <ul class="list" id="${oneDeps.oneDepsTitle}" style="display: none">
+                            <sly data-sly-list.towDaps="${oneDeps.twoDapsItems}">
+                            <li data-value="" class="option" >${towDaps.twoDepsTitle}</li>
+                            </sly>
+                        </ul>
+                    </sly>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-layer">
+        <div class="header-layer-wrap">
+            <sly data-sly-list.oneDeps="${header.oneDapsItems}">
+            <p>${oneDeps.oneDepsTitle}</p>
+            <ul>
+                <sly data-sly-list.towDaps="${oneDeps.twoDapsItems}">
+                <li><a href="${towDaps.twoDepsLink}" x-cq-linkchecker="skip">${towDaps.twoDepsTitle}</a></li>
+                </sly>
+            </ul>
+            </sly>
+        </div>
+    </div>
+</sly>
+
+
+ */-->
