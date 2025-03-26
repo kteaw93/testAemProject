@@ -3,6 +3,7 @@
           xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           jcr:primaryType="nt:unstructured"
           jcr:title="NSC_HEADER"
+          extraClientlibs="[nsc.clientlibs.NSC_accodion]"
           sling:resourceType="cq/gui/components/authoring/dialog" xmlns:granite="http://www.adobe.com/jcr/granite/1.0">
     <content
             jcr:primaryType="nt:unstructured"
@@ -36,7 +37,12 @@
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                                     fieldLabel="First Deps"
+                                                    granite:class="accordion-count"
                                                     composite="{Boolean}true">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        min-items="2"
+                                                        max-items="6"/>
                                                 <field
                                                         jcr:primaryType="nt:unstructured"
                                                         sling:resourceType="granite/ui/components/coral/foundation/accordion"
@@ -53,6 +59,7 @@
                                                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                                         emptyText="1Deps title"
                                                                         fieldLabel="One Deps Title"
+                                                                        granite:class="accordion-main-title"
                                                                         name="./oneDepsTitle" />
                                                                 <oneDepsLink
                                                                         jcr:primaryType="nt:unstructured"
@@ -64,7 +71,12 @@
                                                                         jcr:primaryType="nt:unstructured"
                                                                         sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                                                         fieldLabel="Second Deps"
+                                                                        granite:class="accordion-count"
                                                                         composite="{Boolean}true">
+                                                                    <granite:data
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            min-items="2"
+                                                                            max-items="4"/>
                                                                     <field
                                                                             jcr:primaryType="nt:unstructured"
                                                                             sling:resourceType="granite/ui/components/coral/foundation/accordion"

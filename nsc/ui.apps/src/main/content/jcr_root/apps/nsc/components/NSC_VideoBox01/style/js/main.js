@@ -10,10 +10,6 @@ $( "[data-pop]" ).click(function () {
             vid.play();
         }
 
-        // if($(".popup").find("video").length >= 1){
-        // 	var vid= $(".popup").find("video").get(0)
-        // 	vid.play();
-        // }
     }
 }) ;
 

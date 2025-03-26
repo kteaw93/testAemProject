@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="TextForm"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <tabs jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                        <items jcr:primaryType="nt:unstructured">
+                            <option
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    jcr:title="Option"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    >
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <text
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="텍스트"
+                                                    name="./text"/>
+
+                                            <!-- H 태그 또는 P 태그 span 태그 선택 -->
+                                            <tagSelector
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="태그 선택"
+                                                    name="./tag"
+                                                    required="{Boolean}true">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <h1 jcr:primaryType="nt:unstructured" text="H1" value="h1"/>
+                                                        <h2 jcr:primaryType="nt:unstructured" text="H2" value="h2"/>
+                                                        <h3 jcr:primaryType="nt:unstructured" text="H3" value="h3"/>
+                                                        <h4 jcr:primaryType="nt:unstructured" text="H4" value="h4"/>
+                                                        <h5 jcr:primaryType="nt:unstructured" text="H5" value="h5"/>
+                                                        <h6 jcr:primaryType="nt:unstructured" text="H6" value="h6"/>
+                                                        <p jcr:primaryType="nt:unstructured" text="P tag" value="p"/>
+                                                        <span jcr:primaryType="nt:unstructured" text="span tag" value="span"/>
+                                                    </items>
+                                            </tagSelector>
+                                        </items>
+                                    </column>
+                                </items>
+                            </option>
+                        </items>
+                    </tabs>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

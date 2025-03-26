@@ -3,3 +3,4 @@
 main.js
 main2.js
 main-node-check.js
+main-node-check-v2.js

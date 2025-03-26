@@ -1,0 +1,4 @@
+<sly data-sly-use.textModel="com.nsc.core.models.ncsText.model.NCSKeyTextModel"/>
+
+<!-- 선택된 태그로 동적으로 HTML 태그 생성 -->
+<div data-sly-element="${textModel.tag}">${textModel.text}</div>

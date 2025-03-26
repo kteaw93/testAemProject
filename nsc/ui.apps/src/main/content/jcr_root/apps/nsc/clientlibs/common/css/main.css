@@ -884,7 +884,7 @@ section.sub-top .inner {
     color: #222;
 }
 
-.sub-top h3 + p {
+.sub-top p {
     margin-top: 10px;
     color: #666;
     font-size: 18px;
@@ -927,7 +927,6 @@ section.sub-top .inner {
     vertical-align: baseline;
 }
 
-.sub-top h3,
 .sub-top p {
     animation-duration: 0.7s;
     animation-fill-mode: both;
@@ -4572,7 +4571,7 @@ a[data-pop^="video-pop"] {
         line-height: 1;
     }
 
-    .sub-top h3 + p {
+    .sub-top p {
         margin-top: 15px;
         line-height: 1.63;
         font-size: 16px;

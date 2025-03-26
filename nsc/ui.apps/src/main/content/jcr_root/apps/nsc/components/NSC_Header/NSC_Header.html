@@ -1,3 +1,6 @@
+
+<!--/*
+
 <sly data-sly-use.header="com.nsc.core.models.ncsheader.model.NCSHeaderModel">
     <div class="header-top">
         <h1 class="nav-logo">
@@ -28,18 +31,11 @@
                 </div>
             </div>
             <div class="select-wrap secnd">
-                <div class="nice-select" tabindex="0">
+                <div class="nice-select" tabindex="0" id="subTwoDeps">
                     <span class="current" id="test123">선택</span>
                     <ul class="list" id="선택">
                         <li data-value="" class="option selected">선택</li>
                     </ul>
-                    <sly data-sly-list.oneDeps="${header.oneDapsItems}">
-                        <ul class="list" id="${oneDeps.oneDepsTitle}" style="display: none">
-                            <sly data-sly-list.towDaps="${oneDeps.twoDapsItems}">
-                                <li data-value="" class="option" >${towDaps.twoDepsTitle}</li>
-                            </sly>
-                        </ul>
-                    </sly>
                 </div>
             </div>
 
@@ -52,22 +48,29 @@
     </div>
 </sly>
 
+ */-->
 
-
-
-
-<!--/*
 
 
 <sly data-sly-use.header="com.nsc.core.models.ncsheader.model.NCSHeaderModel">
+    <sly data-sly-list.oneDeps="${header.oneDepsList}">
+        <p>kimtewaoo-${oneDeps.TitleTwoDeps} -${oneDeps.PathTwoDeps} </p>
+    </sly>
     <div class="header-top">
         <h1 class="nav-logo">
             <img class="logo" src="${header.mainImageIcon}" alt="">
            &lt;!&ndash;  <a x-cq-linkchecker="skip"><img class="logo" src="${header.mainImageIcon}" alt="현대자동차"></a> &ndash;&gt;
         </h1>
         <ul class="nav-menu">
-            <sly data-sly-list.oneDeps="${header.oneDapsItems}">
+           <!--/*  <sly data-sly-list.oneDeps="${header.oneDapsItems}">
             <li><a href="${oneDeps.oneDepsLink}" x-cq-linkchecker="skip">${oneDeps.oneDepsTitle}</a></li>
+            </sly> */-->
+            <sly data-sly-list.oneDeps="${header.oneDepsList}">
+                <sly data-sly-test="${oneDeps.Path && oneDeps.Title}">
+                    <li>
+                        <a href="${oneDeps.Path}.html" x-cq-linkchecker="skip">${oneDeps.Title}</a>
+                    </li>
+                </sly>
             </sly>
         </ul>
         <div class="nav-btn-wrap">
@@ -115,17 +118,12 @@
 
     <div class="header-layer">
         <div class="header-layer-wrap">
-            <sly data-sly-list.oneDeps="${header.oneDapsItems}">
-            <p>${oneDeps.oneDepsTitle}</p>
+            <p>d</p>
             <ul>
-                <sly data-sly-list.towDaps="${oneDeps.twoDapsItems}">
-                <li><a href="${towDaps.twoDepsLink}" x-cq-linkchecker="skip">${towDaps.twoDepsTitle}</a></li>
+                <sly data-sly-list.oneDeps="${header.oneDepsList}">
+                <li ><a href="${oneDeps.PathTwoDeps}.html" x-cq-linkchecker="skip">${oneDeps.TitleTwoDeps}</a></li>
                 </sly>
             </ul>
-            </sly>
         </div>
     </div>
 </sly>
-
-
- */-->

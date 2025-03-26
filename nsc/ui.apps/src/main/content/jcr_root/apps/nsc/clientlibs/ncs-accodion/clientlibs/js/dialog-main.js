@@ -1,6 +1,6 @@
 $(document).ready(function(){
         $(document).on("click",".accordion-count",function(){
-            console.log("this : " + $(this).find('[class="coral-Form-field accordion-count coral3-Multifield"]') );
+            /*console.log("this : " + $(this).find('[class="coral-Form-field accordion-count coral3-Multifield"]') );*/
             let nowAccIndex =  $(this).children().filter("coral-multifield-item").length;
             let max = $(this).data('maxItems') ;
             let min = $(this).data('minItems') ;
@@ -16,5 +16,8 @@ $(document).ready(function(){
             }
         })
 
+    $(".accordion-main-title").each(function(index,value){
+        console.log(value.children()); // 각자 스텝마다 올라갈 값
+    })
 
     });
